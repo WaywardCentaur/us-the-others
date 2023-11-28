@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="align-center">
     <div class="align-center">
         <v-img
           alt="Pastafart Observatory"
