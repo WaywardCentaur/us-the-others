@@ -18,32 +18,6 @@
           class="font-weight-bold ">Us the Others</span>
       </h2>
       <h6 class="text-h6 text-justify mb-2 text-white">"Us the Others" est un jeu en ligne où les joueurs agissent en tant que divinités. Ils influencent le bonheur des personnages en gérant des ressources telles que biens et consommables sur un serveur commun. Les visiteurs améliorent le confort et la santé des personnages, déclenchent des quêtes, cela peut entrainer des événements tels que vols, dons, alliances, conflits, décès, ou fluctuations de réputation. </h6>
-
-      <div class="flex justify-center space-x-2 mt-6 lg:mt-10">
-       
-
-        <v-btn
-        color="secondary"
-        @click="dialog1 = true"
-        >
-          Concept Art
-        </v-btn>
-
-       
-
-        <v-btn
-        color="secondary"
-        @click="dialog2 = true"
-        >
-          PBS
-        </v-btn>
-
-       
-        <!-- <a
-          href="https://cloud.digitalocean.com/apps"
-          class="inline-block py-2 lg:py-4 px-4 lg:px-8 rounded bg-yellow-400 hover:bg-yellow-300 text-yellow-800 shadow hover:shadow-2xl transition duration-300"
-        >View Your Dashboard</a> -->
-      </div>
     </div>
 
   <div class="d-flex flex-wrap justify-center">
@@ -60,7 +34,7 @@
     @click="dialog2 = true"
     class="ma-2"
   >
-    Button 2
+    PBS
   </v-btn>
 
   <v-btn
@@ -68,7 +42,7 @@
     @click="dialog3 = true"
     class="ma-2"
   >
-    Button 3
+    Video
   </v-btn>
 
   <v-btn
@@ -76,7 +50,7 @@
     @click="dialog4 = true"
     class="ma-2"
   >
-    Button 4
+    Pitch
   </v-btn>
 </div>
 
@@ -100,6 +74,31 @@
             <img :src="pbs" alt="PBS" />
             <v-card-actions>
               <v-btn color="primary" block @click="dialog2 = false">Close Dialog</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
+
+        <v-dialog
+          v-model="dialog3"
+          width="auto"
+        >
+          <v-card>
+            <video-embed src="https://youtu.be/Pvq5ApQ7490"></video-embed>
+            <v-card-actions>
+              <v-btn color="primary" block @click="dialog1 = false">Close Dialog</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
+
+
+        <v-dialog
+          v-model="dialog4"
+          width="auto"
+        >
+          <v-card>
+            <pdf src="@/assets/pitch.pdf"></pdf>
+            <v-card-actions>
+              <v-btn color="primary" block @click="dialog1 = false">Close Dialog</v-btn>
             </v-card-actions>
           </v-card>
         </v-dialog>
