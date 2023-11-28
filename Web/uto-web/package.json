@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "start": "node sammy.js; serve -s _static -l tcp://0.0.0.0:${PORT:-8080} -n",
     "serve": "vite preview",
     "build": "vite build",
     "lint": "vue-cli-service lint",
