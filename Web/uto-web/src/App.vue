@@ -107,7 +107,6 @@
 </template>
 
 <script>
-import pdf from 'vue-pdf'
 import Image from '@/assets/image.png'; 
 import PBS from '@/assets/pbs.png'; 
 import Logo from '@/assets/PastaLogo.png';
