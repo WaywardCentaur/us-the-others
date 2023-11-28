@@ -42,7 +42,7 @@
     @click="dialog3 = true"
     class="ma-2"
   >
-    Video
+    PBS
   </v-btn>
 
   <v-btn
@@ -108,7 +108,7 @@
 
 <script>
 
-import Image from '@/assets/image.png'; 
+import Image from '@/assets/concept.png'; 
 import PBS from '@/assets/pbs.png'; 
 import PBS2 from '@/assets/image2.png'; 
 import Logo from '@/assets/PastaLogo.png';
