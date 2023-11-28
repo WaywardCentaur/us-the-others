@@ -83,7 +83,7 @@
           width="auto"
         >
           <v-card>
-            <video-embed src="https://youtu.be/Pvq5ApQ7490"></video-embed>
+            <video-embed :src="video"></video-embed>
             <v-card-actions>
               <v-btn color="primary" block @click="dialog3 = false">Close Dialog</v-btn>
             </v-card-actions>
@@ -96,7 +96,7 @@
           width="auto"
         >
           <v-card>
-            <pdf src="@/assets/pitch.pdf"></pdf>
+            <pdf :src="pitch"></pdf>
             <v-card-actions>
               <v-btn color="primary" block @click="dialog4 = false">Close Dialog</v-btn>
             </v-card-actions>
@@ -110,6 +110,7 @@
 import Image from '@/assets/image.png'; 
 import PBS from '@/assets/pbs.png'; 
 import Logo from '@/assets/PastaLogo.png';
+import Pitch from '@/assets/pitch.pdf';
 export default {
   name: "App",
   data() {
@@ -117,6 +118,8 @@ export default {
       image: Image,
       pbs: PBS,
       logo: Logo,
+      pitch: Pitch,
+      video: "https://youtu.be/Pvq5ApQ7490",
       dialog1: false,
       dialog2: false,
       dialog3: false,
