@@ -1,18 +1,29 @@
 <template>
   <v-app>
+    <div class="d-flex align-center">
+        <v-img
+          alt="Pastafart Observatory"
+          class="shrink mr-2"
+          contain
+          :src="logo"
+          transition="scale-transition"
+          width="40"
+        />
+
+      </div>
     <div class="container mx-auto text-center px-8"> 
       <h2 class="text-h2 font-weight-bold mb-2 text-green-200">
-        Presenting
+       
         <span
           class="font-weight-bold ">Us the Others</span>
       </h2>
-      <h4 class="text-h4 font-weight-bold mb-2 text-white">"Us the Others" est un jeu en ligne où les joueurs agissent en tant que divinités. Ils influencent le bonheur des personnages en gérant des ressources telles que biens et consommables sur un serveur commun. Les visiteurs améliorent le confort et la santé des personnages, déclenchent des quêtes, cela peut entrainer des événements tels que vols, dons, alliances, conflits, décès, ou fluctuations de réputation. </h4>
+      <h6 class="text-h6 text-justify mb-2 text-white">"Us the Others" est un jeu en ligne où les joueurs agissent en tant que divinités. Ils influencent le bonheur des personnages en gérant des ressources telles que biens et consommables sur un serveur commun. Les visiteurs améliorent le confort et la santé des personnages, déclenchent des quêtes, cela peut entrainer des événements tels que vols, dons, alliances, conflits, décès, ou fluctuations de réputation. </h6>
 
       <div class="flex justify-center space-x-2 mt-6 lg:mt-10">
        
 
         <v-btn
-        color="primary"
+        color="secondary"
         @click="dialog1 = true"
         >
           Concept Art
@@ -60,12 +71,14 @@
 <script>
 import Image from '@/assets/image.png'; 
 import PBS from '@/assets/pbs.png'; 
+import Logo from '@/assets/PastaLogo.png';
 export default {
   name: "App",
   data() {
     return {
       image: Image,
       pbs: PBS,
+      logo: Logo,
       dialog1: false,
       dialog2: false,
     };
