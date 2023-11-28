@@ -6,7 +6,7 @@
         <span
           class="font-weight-bold ">Us the Others</span>
       </h2>
-      <h3 class="text-h3 font-weight-bold mb-2 text-white">Description</h3>
+      <h4 class="text-h4 font-weight-bold mb-2 text-white">"Us the Others" est un jeu en ligne où les joueurs agissent en tant que divinités. Ils influencent le bonheur des personnages en gérant des ressources telles que biens et consommables sur un serveur commun. Les visiteurs améliorent le confort et la santé des personnages, déclenchent des quêtes, cela peut entrainer des événements tels que vols, dons, alliances, conflits, décès, ou fluctuations de réputation. </h4>
 
       <div class="flex justify-center space-x-2 mt-6 lg:mt-10">
        
