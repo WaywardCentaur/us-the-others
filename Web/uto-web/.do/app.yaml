@@ -1,0 +1,9 @@
+name: uto-web
+services:
+- build_command: npm build
+  environment_slug: node-js
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: waywardcentaur/us-the-others/Web/uto-web
+  name: uto-web
