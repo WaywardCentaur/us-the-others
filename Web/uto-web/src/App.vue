@@ -83,14 +83,14 @@
           width="auto"
         >
           <v-card>
-            <video-embed src="https://youtu.be/Pvq5ApQ7490"></video-embed>
+            <img :src="pbs2" alt="PBS" />
             <v-card-actions>
               <v-btn color="primary" block @click="dialog3 = false">Close Dialog</v-btn>
             </v-card-actions>
           </v-card>
         </v-dialog>
 
-
+<!-- 
         <v-dialog
           v-model="dialog4"
           width="auto"
@@ -101,15 +101,16 @@
               <v-btn color="primary" block @click="dialog4 = false">Close Dialog</v-btn>
             </v-card-actions>
           </v-card>
-        </v-dialog>
+        </v-dialog> -->
 
   </v-app>
 </template>
 
 <script>
-import pdf from 'vue-pdf'
+
 import Image from '@/assets/image.png'; 
 import PBS from '@/assets/pbs.png'; 
+import PBS2 from '@/assets/image2.png'; 
 import Logo from '@/assets/PastaLogo.png';
 export default {
   name: "App",
@@ -118,6 +119,7 @@ export default {
       image: Image,
       pbs: PBS,
       logo: Logo,
+      pbs2: PBS2,
       dialog1: false,
       dialog2: false,
       dialog3: false,
