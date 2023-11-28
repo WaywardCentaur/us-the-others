@@ -4,12 +4,12 @@
       <h2 class="text-h2 font-weight-bold mb-2 text-green-200">
         Presenting
         <span
-          class="font-weight-bold bg-clip-text text-transparent bg-gradient-to-br from-blue-400 via-purple-400 to-blue-500">Us the Others</span>
+          class="font-weight-bold ">Us the Others</span>
       </h2>
       <h3 class="text-h3 font-weight-bold mb-2 text-white">Description</h3>
 
       <div class="flex justify-center space-x-2 mt-6 lg:mt-10">
-        <img :src="image" alt="Concept art 1" />
+       
 
         <v-btn
         color="primary"
