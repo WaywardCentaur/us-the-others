@@ -1,16 +1,35 @@
 <template>
   <div id="app" class="bg-green-600 py-56 min-h-screen">
     <div class="container mx-auto text-center px-8"> 
-      <h2 class="text-3xl lg:text-6xl font-bold mb-2 text-green-200">
+      <h2 class="text-h2 font-weight-bold mb-2 text-green-200">
         Presenting
         <span
-          class="font-bold bg-clip-text text-transparent bg-gradient-to-br from-blue-400 via-purple-400 to-blue-500"
-        >Us the Others</span>
+          class="font-weight-bold bg-clip-text text-transparent bg-gradient-to-br from-blue-400 via-purple-400 to-blue-500">Us the Others</span>
       </h2>
-      <h3 class="text-3xl lg:text-6xl font-bold mb-2 text-white">Description</h3>
+      <h3 class="text-h3 font-weight-bold mb-2 text-white">Description</h3>
 
       <div class="flex justify-center space-x-2 mt-6 lg:mt-10">
         <img :src="image" alt="Concept art 1" />
+
+        <v-btn
+        color="primary"
+        @click="dialog = true"
+        >
+          Concept Art
+        </v-btn>
+
+        <v-dialog
+          v-model="dialog"
+          width="auto"
+        >
+          <v-card>
+            <img :src="image" alt="Concept art 1" />
+            <v-card-actions>
+              <v-btn color="primary" block @click="dialog = false">Close Dialog</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
+
         <v-btn
         color="primary"
         @click="dialog = true"
@@ -23,9 +42,7 @@
           width="auto"
         >
           <v-card>
-            <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </v-card-text>
+            <img :src="image" alt="Concept art 1" />
             <v-card-actions>
               <v-btn color="primary" block @click="dialog = false">Close Dialog</v-btn>
             </v-card-actions>
