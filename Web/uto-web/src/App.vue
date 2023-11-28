@@ -42,7 +42,7 @@
           width="auto"
         >
           <v-card>
-            <img :src="image" alt="Concept art 1" />
+            <img :src="pbs" alt="PBS" />
             <v-card-actions>
               <v-btn color="primary" block @click="dialog = false">Close Dialog</v-btn>
             </v-card-actions>
@@ -59,11 +59,13 @@
 
 <script>
 import Image from '@/assets/image.png'; 
+import PBS from '@/assets/pbs.png'; 
 export default {
   name: "App",
   data() {
     return {
       image: Image,
+      pbs: PBS,
       dialog: false,
     };
   },
