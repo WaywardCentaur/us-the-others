@@ -29,6 +29,57 @@
           Concept Art
         </v-btn>
 
+       
+
+        <v-btn
+        color="secondary"
+        @click="dialog2 = true"
+        >
+          PBS
+        </v-btn>
+
+       
+        <!-- <a
+          href="https://cloud.digitalocean.com/apps"
+          class="inline-block py-2 lg:py-4 px-4 lg:px-8 rounded bg-yellow-400 hover:bg-yellow-300 text-yellow-800 shadow hover:shadow-2xl transition duration-300"
+        >View Your Dashboard</a> -->
+      </div>
+    </div>
+
+  <div class="d-flex flex-wrap justify-center">
+  <v-btn
+    color="secondary"
+    @click="dialog1 = true"
+    class="ma-2"
+  >
+    Concept Art
+  </v-btn>
+
+  <v-btn
+    color="secondary"
+    @click="dialog2 = true"
+    class="ma-2"
+  >
+    Button 2
+  </v-btn>
+
+  <v-btn
+    color="secondary"
+    @click="dialog3 = true"
+    class="ma-2"
+  >
+    Button 3
+  </v-btn>
+
+  <v-btn
+    color="secondary"
+    @click="dialog4 = true"
+    class="ma-2"
+  >
+    Button 4
+  </v-btn>
+</div>
+
         <v-dialog
           v-model="dialog1"
           width="auto"
@@ -41,13 +92,6 @@
           </v-card>
         </v-dialog>
 
-        <v-btn
-        color="secondary"
-        @click="dialog2 = true"
-        >
-          PBS
-        </v-btn>
-
         <v-dialog
           v-model="dialog2"
           width="auto"
@@ -59,12 +103,7 @@
             </v-card-actions>
           </v-card>
         </v-dialog>
-        <!-- <a
-          href="https://cloud.digitalocean.com/apps"
-          class="inline-block py-2 lg:py-4 px-4 lg:px-8 rounded bg-yellow-400 hover:bg-yellow-300 text-yellow-800 shadow hover:shadow-2xl transition duration-300"
-        >View Your Dashboard</a> -->
-      </div>
-    </div>
+
   </v-app>
 </template>
 
@@ -81,6 +120,8 @@ export default {
       logo: Logo,
       dialog1: false,
       dialog2: false,
+      dialog3: false,
+      dialog4: false,
     };
   },
 };
