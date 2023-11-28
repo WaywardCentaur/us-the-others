@@ -1,13 +1,13 @@
 <template>
   <v-app>
-    <div class="d-flex align-center">
+    <div class="align-center">
         <v-img
           alt="Pastafart Observatory"
           class="shrink mr-2"
           contain
           :src="logo"
           transition="scale-transition"
-          width="40"
+          width="140"
         />
 
       </div>
@@ -42,7 +42,7 @@
         </v-dialog>
 
         <v-btn
-        color="primary"
+        color="secondary"
         @click="dialog2 = true"
         >
           PBS
