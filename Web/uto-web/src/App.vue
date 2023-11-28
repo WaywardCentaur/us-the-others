@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-green-600 py-56 min-h-screen">
+  <v-app>
     <div class="container mx-auto text-center px-8"> 
       <h2 class="text-h2 font-weight-bold mb-2 text-green-200">
         Presenting
@@ -13,38 +13,38 @@
 
         <v-btn
         color="primary"
-        @click="dialog = true"
+        @click="dialog1 = true"
         >
           Concept Art
         </v-btn>
 
         <v-dialog
-          v-model="dialog"
+          v-model="dialog1"
           width="auto"
         >
           <v-card>
             <img :src="image" alt="Concept art 1" />
             <v-card-actions>
-              <v-btn color="primary" block @click="dialog = false">Close Dialog</v-btn>
+              <v-btn color="primary" block @click="dialog1 = false">Close Dialog</v-btn>
             </v-card-actions>
           </v-card>
         </v-dialog>
 
         <v-btn
         color="primary"
-        @click="dialog = true"
+        @click="dialog2 = true"
         >
           PBS
         </v-btn>
 
         <v-dialog
-          v-model="dialog"
+          v-model="dialog2"
           width="auto"
         >
           <v-card>
             <img :src="pbs" alt="PBS" />
             <v-card-actions>
-              <v-btn color="primary" block @click="dialog = false">Close Dialog</v-btn>
+              <v-btn color="primary" block @click="dialog2 = false">Close Dialog</v-btn>
             </v-card-actions>
           </v-card>
         </v-dialog>
@@ -54,7 +54,7 @@
         >View Your Dashboard</a> -->
       </div>
     </div>
-  </div>
+  </v-app>
 </template>
 
 <script>
@@ -66,7 +66,8 @@ export default {
     return {
       image: Image,
       pbs: PBS,
-      dialog: false,
+      dialog1: false,
+      dialog2: false,
     };
   },
 };
@@ -75,6 +76,6 @@ export default {
 <style>
 #app {
   background-color: #268351;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232c945c' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background: url("http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232c945c' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 </style>
