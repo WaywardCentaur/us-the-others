@@ -85,7 +85,7 @@
           <v-card>
             <video-embed src="https://youtu.be/Pvq5ApQ7490"></video-embed>
             <v-card-actions>
-              <v-btn color="primary" block @click="dialog1 = false">Close Dialog</v-btn>
+              <v-btn color="primary" block @click="dialog3 = false">Close Dialog</v-btn>
             </v-card-actions>
           </v-card>
         </v-dialog>
@@ -98,7 +98,7 @@
           <v-card>
             <pdf src="@/assets/pitch.pdf"></pdf>
             <v-card-actions>
-              <v-btn color="primary" block @click="dialog1 = false">Close Dialog</v-btn>
+              <v-btn color="primary" block @click="dialog4 = false">Close Dialog</v-btn>
             </v-card-actions>
           </v-card>
         </v-dialog>
