@@ -112,9 +112,6 @@ import PBS from '@/assets/pbs.png';
 import Logo from '@/assets/PastaLogo.png';
 export default {
   name: "App",
-  components: {
-    pdf
-  },
   data() {
     return {
       image: Image,
